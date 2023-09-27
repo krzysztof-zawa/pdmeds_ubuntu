@@ -74,9 +74,9 @@ bmp1.read_temperature()
 bmp1.read_pressure()
 bmp1.read_altitude()
 bmp1.close_i2c()
+
 lgpio.i2c_write_byte_data(i2c, mux_address, 0b00000010)
 bmp2 = BMP180v3.BMP180()
-
 bmp2.read_temperature()
 bmp2.read_pressure()
 bmp2.read_altitude()
